@@ -6,6 +6,7 @@ import com.pinsily.car_rental.service.bean.ResBean;
 import com.pinsily.car_rental.service.request.CarListQueryReq;
 import com.pinsily.car_rental.service.request.CarRentalReq;
 import com.pinsily.car_rental.service.request.RentalRecordQueryReq;
+import com.pinsily.car_rental.service.request.ReturnCarReq;
 import com.pinsily.car_rental.service.response.CarListQueryResp;
 import com.pinsily.car_rental.service.response.RentalRecordQueryResp;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,5 +46,10 @@ public class CarRentalServiceImpl implements CarRentalService {
     @Override
     public RentalRecordQueryResp queryRentalRecord(RentalRecordQueryReq req) {
         return carRentalLogic.queryRentalRecord(req);
+    }
+
+    @Override
+    public ResBean returnCar(ReturnCarReq req) {
+        return carRentalLogic.returnCar(req);
     }
 }

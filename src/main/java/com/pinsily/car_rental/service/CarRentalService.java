@@ -4,6 +4,7 @@ import com.pinsily.car_rental.service.bean.ResBean;
 import com.pinsily.car_rental.service.request.CarListQueryReq;
 import com.pinsily.car_rental.service.request.CarRentalReq;
 import com.pinsily.car_rental.service.request.RentalRecordQueryReq;
+import com.pinsily.car_rental.service.request.ReturnCarReq;
 import com.pinsily.car_rental.service.response.CarListQueryResp;
 import com.pinsily.car_rental.service.response.RentalRecordQueryResp;
 
@@ -23,5 +24,10 @@ public interface CarRentalService {
      * query user rental record list
      * */
     RentalRecordQueryResp queryRentalRecord(RentalRecordQueryReq req);
+
+    /**
+     * return car
+     * */
+    ResBean returnCar(ReturnCarReq req);
 
 }

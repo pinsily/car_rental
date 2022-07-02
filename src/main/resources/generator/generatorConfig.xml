@@ -63,6 +63,8 @@
         <!--        </table>-->
         <table tableName="t_car" domainObjectName="Car"></table>
         <table tableName="t_order" domainObjectName="Order"></table>
+        <table tableName="t_user" domainObjectName="User"></table>
+
 
 
     </context>
